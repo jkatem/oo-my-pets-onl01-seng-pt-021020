@@ -47,5 +47,5 @@ class Owner
 
   end
 
-  #binding.pry
+  binding.pry
 end
