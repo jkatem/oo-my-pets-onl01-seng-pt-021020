@@ -43,8 +43,22 @@ class Owner
     Dog.all.select {|dog| dog.owner == self}
   end
 
-  def buy_cat(name)
+  def buy_cat(cat)
     Cat.new(cat, self)
+  end
+
+  def buy_dog(dog)
+    Dog.new(dog, self)
+  end
+
+  def walk_dogs
+    dogs.each do |dog|
+      dog.mood = "happy"
+    end
+  end
+
+  def feed_cats
+    cats.each do |cat| cat.mood = "happy"
   end
 
   binding.pry
