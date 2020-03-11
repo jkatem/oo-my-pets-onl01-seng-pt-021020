@@ -25,10 +25,12 @@ class Owner
   end
 
   def self.reset_all
-    # @@all.each_with_index do { |owner| remove_method(owner)}
     self.all.clear
   end
 
+  def cats
+
+  end
 
   #binding.pry
 end
