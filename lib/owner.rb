@@ -32,7 +32,7 @@ class Owner
 # Associations
 
   def cats
-    Cats.all.select {|cat| cat.owner == self}
+    Cat.all.select {|cat| cat.owner == self}
   end
 
   #binding.pry
