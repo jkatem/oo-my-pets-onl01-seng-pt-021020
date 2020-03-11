@@ -58,16 +58,16 @@ class Owner
 
   def feed_cats
     cats.each {|cat| cat.mood = "happy"}
-    end 
+    end
   end
 
-  def sell_pets 
+  def sell_pets
     pets = dogs + cats
     pets.each do |pet|
       pet.mood = "nervous"
       pet.owner = nil
-    end 
-  end 
+    end
+  end
 
   def list_pets
    "I have #{self.dogs.length} dog(s), and #{self.cats.length} cat(s)."
