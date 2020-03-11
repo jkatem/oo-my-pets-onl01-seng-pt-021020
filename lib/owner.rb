@@ -26,7 +26,7 @@ class Owner
   end
 
   def self.reset_all
-    self.all.clear
+    @@all.clear
   end
 
 # Associations
