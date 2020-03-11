@@ -28,8 +28,10 @@ class Owner
     self.all.clear
   end
 
-  def cats
+# Associations
 
+  def cats
+    Cats.all.select
   end
 
   #binding.pry
