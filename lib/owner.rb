@@ -41,7 +41,11 @@ class Owner
 
   def dogs
     Dog.all.select {|dog| dog.owner == self}
-  end 
+  end
 
-  binding.pry
+  def buy_cat(name)
+
+  end
+
+  #binding.pry
 end
